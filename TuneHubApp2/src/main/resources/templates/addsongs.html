@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Songs</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+ <main>
+      <section class="section-login" id="cta">
+        <div class="parent-container">
+          <div class="chaild-container">
+            <div class="login-form-box addsong-form-box">
+              <h2 class="heading-primary addsong-pr-heading">
+                Please continue to Add Song
+              </h2>
+              <form action="/addsongs" method="post" class="login-form">
+                <div>
+                  <label>Song Name</label>
+		          <input type="text" name="name"
+                    required="required"
+                    placeholder="Song Name"
+                  />
+                </div>
+
+                <div>
+                  <label>Song Artist</label>
+				  <input type="text" 
+				  	name="artist"
+                    required="required"
+                    placeholder="Song Artist"
+                  />
+                </div>
+
+                <div>
+                  <label>Song Genre</label>
+				  <input type="text" 
+				  	name="genre"
+                    required="required"
+                    placeholder="Song Genre"
+                  />
+                </div>
+
+                <div>
+                  <label>Song Link</label>
+				  <input type="text" 
+				  	name="link"
+                    required="required"
+                    placeholder="Song Link"
+                  />
+                </div>
+
+                <button class="btn btn--full">Add Song</button>
+              </form>
+            </div>
+            <div
+              class="addsong-img-box"
+              role="img"
+              aria-label="add song Image"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
